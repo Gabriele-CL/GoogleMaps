@@ -21,11 +21,12 @@ Mobile.startExistingApplication('com.lynxspa.prontotreno')
 
 Mobile.switchToPortrait()
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.ImageButton'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - RIFIUTA'), 0)
 
-Mobile.setText(findTestObject(''), 'Roma Termini', 0)
+Mobile.setText(findTestObject('Object Repository/Trenitalia/android.widget.EditText - Stazione di partenza'), 'Roma Termini', 
+    0)
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.TextView - Roma Termini'), 0)
 
@@ -36,15 +37,15 @@ Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.TextView 
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.ImageView'), 0)
 
-Mobile.getText(findTestObject('Object Repository/Trenitalia/android.view.View'), 0)
 
-Mobile.getText(findTestObject('Object Repository/Trenitalia/android.view.View (1)'), 0)
+Mobile.sendKeys(findTestObject('Object Repository/Trenitalia/android.widget.LinearLayout (1)'), 'Dom 22 Mag 20 00')
 
-Mobile.getText(findTestObject(''), 0)
+//Mobile.sendKeys(findTestObject('Trenitalia/android.view.View', [('Mese') : 'Mese']), 'Dom 22 Mag', FailureHandling.STOP_ON_FAILURE)
 
+//Mobile.sendKeys(findTestObject('Object Repository/Trenitalia/android.view.View (1)', [('Ore') : 'Ore']), '20', FailureHandling.STOP_ON_FAILURE)
+//
+//Mobile.getText(findTestObject('Object Repository/Trenitalia/android.view.View (2)'), 0)
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - CONFERMA'), 0)
-
-Mobile.startExistingApplication('com.lynxspa.prontotreno')
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - RICERCA'), 0)
 
@@ -52,7 +53,7 @@ Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - 
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.RadioButton - Durata Viaggio'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - CONFERMA'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.LinearLayout'), 0)
 
@@ -81,13 +82,13 @@ Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - 
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.RadioButton'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - AVANTI (1)'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - HO CAPITO'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.CheckBox'), 0)
 
-Mobile.tap(findTestObject(''), 0)
+Mobile.tap(findTestObject('Object Repository/Trenitalia/android.widget.Button - AVANTI (1)'), 0)
 
 Mobile.closeApplication()
 
